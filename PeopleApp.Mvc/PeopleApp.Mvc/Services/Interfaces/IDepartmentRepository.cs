@@ -7,6 +7,6 @@ public interface IDepartmentRepository
 {
     Task<ApiResult<Department>> GetAsync();
     ApiResult<Department> GetById(long id);
-    Task<ApiResult<Department>> AddAsync();
+    Task<ApiResult<Department>> AddAsync(Department department);
     
 }
